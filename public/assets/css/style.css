@@ -1,15 +1,21 @@
- /* Body Styling */
- body {
+/* Universal Box-Sizing Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
     background-color: #f8f9fa; /* Light gray background color */
     font-family: 'Montserrat', sans-serif; /* Montserrat font family */
     font-size: 14px; /* Base font size */
     height: 100%; /* Full height */
     margin: 0; /* Remove default margin */
     padding-bottom: 60px; /* Space for the footer */
-    box-sizing: border-box; /* Include padding in width */
-
 }
 
+/* HTML Full Height */
 html {
     height: 100%; /* Full height */
 }
@@ -19,28 +25,20 @@ html {
     background-color: #264653; /* Dark teal background color */
     color: #ffffff; /* White text color */
     padding: 10px 0; /* Vertical padding */
-    height: 220px; /* Fixed header height */
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
     position: relative;
     z-index: 1; /* Stack order */
 }
 
-.container-fluid {
-    height: 180px; /* Set container height */
-}
-
 /* Navigation Links */
 .header-links {
-    position: absolute; /* Position over the header */
-    top: 0; /* Align to top */
-    width: 100%; /* Full width */
     display: flex;
     justify-content: center; /* Center links */
-    padding-left: -55px; /* Vertical padding */
     background-color: #264653; /* Match header background */
-    margin: 0; /* Remove default margin */
+    padding: 10px 0; /* Vertical padding */
+    width: 100%;
 }
 
 .header-links a {
@@ -48,14 +46,17 @@ html {
     margin: 0 15px; /* Horizontal spacing */
     text-decoration: none; /* Remove underline */
     font-size: 16px; /* Link font size */
+    transition: color 0.3s ease;
+}
+
+.header-links a:hover {
+    color: #e76f51; /* Hover color */
 }
 
 /* Logo and Title Section */
 .logo-title-section {
-    position: relative;
-    z-index: 2;
-    margin-top: 0; /* Remove top margin */
     text-align: center; /* Center content */
+    margin-top: 10px; /* Top margin */
 }
 
 .logo-title-section .logo {
@@ -66,47 +67,56 @@ html {
 .logo-title-section .app-title {
     font-size: 24px; /* Title font size */
     color: #ffffff; /* White text color */
+    margin-top: 10px; /* Space between logo and title */
 }
 
 /* Main Container Styling */
 .main-container {
     display: flex;
     justify-content: center; /* Center content horizontally */
-    align-items: stretch; /* Stretch items to match height */
+    align-items: flex-start; /* Align items to the top */
     width: 100%; /* Full width */
-    padding: 20px 0; /* Vertical padding */
+    padding: 20px; /* Padding */
+    gap: 20px; /* Space between columns */
+    flex-wrap: wrap; /* Wrap columns on smaller screens */
     box-sizing: border-box; /* Include padding in width */
 }
 
 /* Side Divs for Advertisements */
 .side-div {
-    width: 30%; /* 20% width */
+    flex: 1 1 200px; /* Flexible width with minimum */
     background-color: #FFA500; /* Default to orange, overridden in specific classes */
     min-height: 300px; /* Minimum height to make visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Specific Ad Divs */
 .orange-div {
     background-color: orange; /* Orange background */
-    margin-right: 20px; /* Space between orange div and card */
 }
 
 .brown-div {
     background-color: brown; /* Brown background */
-    margin-left: 20px; /* Space between brown div and card */
 }
 
 /* Card Styling */
 .card.emphasized-card {
-    width: 40%; /* 40% width */
-    max-width: none; /* Remove max-width */
-    /* Top margin */
+    flex: 2 1 400px; /* Flexible width with minimum */
+    max-width: 600px; /* Maximum width */
     z-index: 100;
-    height: 100%;
+    height: auto; /* Adjust height based on content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: none; /* Remove border */
 }
 
 .card-header {
     background-color: #264653; /* Match header color */
     color: #ffffff; /* White text color */
+    padding: 15px; /* Padding */
+    border-bottom: none; /* Remove bottom border */
+    text-align: center;
 }
 
 .card-header h3 {
@@ -114,7 +124,7 @@ html {
 }
 
 .card-body {
-   
+    padding: 20px; /* Add padding */
     position: relative; /* For paste button positioning */
 }
 
@@ -126,6 +136,7 @@ html {
     height: 50px; /* Input height */
     width: 100%; /* Full width */
     box-sizing: border-box; /* Include padding in width */
+    font-size: 16px; /* Font size */
 }
 
 /* Paste Button Styling */
@@ -135,7 +146,6 @@ html {
     right: 10px; /* Align to right */
     transform: translateY(-50%); /* Adjust vertical position */
     padding: 5px 10px; /* Padding */
-    margin: 0; /* No margin */
     display: flex;
     align-items: center; /* Center content */
     border-radius: 15px; /* Rounded corners */
@@ -143,20 +153,16 @@ html {
     color: #ffffff; /* White text */
     border: none; /* No border */
     cursor: pointer; /* Pointer cursor */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease;
 }
 
-/* Paste Button Icon Styling */
 .paste-button .fas {
     margin-right: 5px; /* Right margin */
 }
 
-/* Paste Button Focus and Active States */
-.paste-button:focus,
-.paste-button:active {
-    outline: none; /* Remove outline */
-    box-shadow: none; /* Remove shadow */
-    background-color: rgba(42, 157, 143, 0.8); /* Teal color */
-    color: #ffffff; /* White text */
+.paste-button:hover {
+    background-color: rgba(38, 70, 83, 0.8); /* Darker teal on hover */
 }
 
 /* Convert Button Styling */
@@ -173,28 +179,31 @@ html {
     cursor: pointer; /* Pointer cursor */
     margin-left: 20px; /* Left margin */
     white-space: nowrap; /* Prevent text wrap */
+    transition: background-color 0.3s ease;
 }
 
-/* Themed Button Hover Effect */
-.themed-button:hover {
-    background-color: rgba(38, 70, 83); /* Darker teal on hover */
-}
-
-/* Primary Button Styling */
-.btn-primary {
-    background-color: rgba(42, 157, 143, 0.8); /* Teal color */
-    border-color: rgba(42, 157, 143, 0.8); /* Border color */
-    margin-left: 10px; /* Left margin */
-    font-size: 12px; /* Font size */
-}
-
-/* Primary Button Hover Effect */
-.btn-primary:hover {
+#convertButton:hover {
     background-color: rgba(38, 70, 83, 0.8); /* Darker teal on hover */
-    border-color: rgba(38, 70, 83, 0.8); /* Border color */
 }
 
-/* Disabled Button Styling */
+/* Action Buttons Styling */
+.action-buttons .btn {
+    background-color: rgba(42, 157, 143, 0.8); /* Teal color */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 30px; /* Rounded corners */
+    height: 40px; /* Button height */
+    padding: 0 15px; /* Horizontal padding */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    margin: 5px; /* Margin */
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons .btn:hover {
+    background-color: rgba(38, 70, 83, 0.8); /* Darker teal on hover */
+}
+
 .btn-disabled {
     background-color: rgba(108, 117, 125, 0.8); /* Gray color */
     border-color: rgba(108, 117, 125, 0.8); /* Border color */
@@ -207,11 +216,14 @@ html {
 .progress {
     height: 50px; /* Height of progress bar */
     background-color: #ffffff; /* Background color */
+    border-radius: 25px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
 }
 
 .progress-bar {
     width: 0%; /* Initial width */
     background-color: rgba(42, 157, 143, 0.8); /* Teal color */
+    transition: width 0.4s ease;
 }
 
 /* Progress Text Styling */
@@ -221,6 +233,7 @@ html {
     padding-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    text-align: center;
 }
 
 /* Animated Text Styling */
@@ -245,7 +258,7 @@ html {
 
 /* Information Section Styling */
 .info-section {
- 
+    margin-top: 20px;
 }
 
 .info-section h4 {
@@ -283,47 +296,39 @@ html {
 }
 
 .video-item .btn {
-    float: right; /* Align to the right */
-    margin-left: 10px; /* Left margin */
     font-size: 12px; /* Font size */
-}
-
-.video-item input[type="checkbox"] {
-    margin-right: 15px; /* Right margin */
-}
-
-/* Button Container Styling */
-.btn-container {
-    display: flex;
-    justify-content: flex-end; /* Align buttons to the right */
+    margin-left: 10px; /* Left margin */
+    padding: 5px 10px; /* Padding */
+    border-radius: 15px; /* Rounded corners */
 }
 
 /* Three Column Layout */
 .three-column-layout {
     display: flex;
-    height: 450px ;/* Adjust height based on header, centered-purple-div, and footer */
-    margin-bottom: 20px; /* Top margin */
-   
+    flex-wrap: wrap; /* Wrap columns on smaller screens */
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Bottom margin */
+    gap: 20px; /* Space between columns */
+}
+
+/* Columns Styling */
+.left-column,
+.middle-column,
+.right-column {
+    flex: 1 1 300px; /* Flexible width with minimum */
+    min-height: 300px; /* Ensure minimum height */
 }
 
 .left-column {
-    flex: 3;
-    background-color: red; /* Placeholder color */
-    min-height: 400px; /* Ensure minimum height */
-    margin-right: 20px; /* Space between columns */
-    height: 100%;
+    background-color: #FFA500; /* Placeholder color */
 }
 
 .middle-column {
-    flex: 4;
-    min-height: 400px; /* Ensure minimum height */
+    /* No background color */
 }
 
 .right-column {
-    flex: 3;
-    background-color: green; /* Placeholder color */
-    min-height: 400px; /* Ensure minimum height */
-    margin-left: 20px; /* Space between columns */
+    background-color: #8B4513; /* Brown placeholder color */
 }
 
 /* Centered Purple Div */
@@ -353,38 +358,34 @@ html {
     justify-content: center;
     z-index: 1000; /* Ensure it's on top */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    margin-top: 50px;
 }
+
+/* Main Element Margin to Prevent Overlap with Footer */
 main {
-    margin-bottom: 100px;
+    margin-bottom: 80px; /* Increased to prevent overlap */
 }
+
 /* Responsive Styling for Mobile Devices */
 @media (max-width: 1300px) {
     /* Adjust Header Links */
     .header-links {
         flex-direction: row;
-        font-size: 10px; /* Smaller font size */
-        margin-left: 5px; /* Left margin */
+        font-size: 14px; /* Slightly smaller font size */
+        padding: 8px 0; /* Adjust padding */
     }
-    .table{
-        /* Remove any fixed height or overflow properties */
-        /* height: 300px; */
-        overflow:hidden;
-        height: 100%;
-    }
+
     .header-links a {
-        margin-left: 5px; /* Left margin */
-        margin-right: 5px; /* Right margin */
+        margin: 0 10px; /* Reduced margins */
+        font-size: 14px; /* Reduced font size */
     }
 
     /* Adjust Logo Title Section */
     .logo-title-section {
-        margin-top: 20px; /* Top margin */
+        margin-top: 10px; /* Adjust top margin */
     }
 
     /* Adjust Main Container */
     .main-container {
-        margin-top: -88px; /* Adjusted for smaller screens */
         flex-direction: column; /* Stack side divs vertically */
         align-items: center; /* Center side divs */
         padding: 10px; /* Add padding */
@@ -392,7 +393,7 @@ main {
 
     .side-div {
         width: 80%; /* Adjusted width for smaller screens */
-        height: 600px; /* Fixed height */
+        height: auto; /* Allow height to adjust based on content */
         margin: 10px 0; /* Vertical margin */
     }
 
@@ -401,23 +402,9 @@ main {
         flex-direction: column; /* Stack columns vertically */
         height: auto; /* Adjust height */
         padding-bottom: 0px;
-        margin-top: 600px;
+        margin-top: 20px;
     }
 
-    #convertButton {
-        background-color: rgba(42, 157, 143, 0.8); /* Teal color */
-        color: #ffffff; /* White text */
-        border: none; /* No border */
-        border-radius: 30px; /* Rounded corners */
-        height: 50px; /* Button height */
-        padding: 0 20px; /* Horizontal padding */
-        min-width: 100px; /* Minimum width */
-        font-size: 20px; /* Font size */
-        font-weight: bold; /* Bold text */
-        cursor: pointer; /* Pointer cursor */
-        margin-left: 20px; /* Left margin */
-        white-space: nowrap; /* Prevent text wrap */
-    }
     .left-column,
     .middle-column,
     .right-column {
@@ -425,25 +412,24 @@ main {
         min-height: 300px; /* Adjust minimum height */
         margin: 10px 0; /* Vertical margin */
     }
-    .left-column,.brown-div{
+
+    /* Hide Specific Columns on Smaller Screens */
+    .left-column,
+    .brown-div {
         display: none;
     }
-    .right-column{
-        height: 100%;
-       
-    }
+
+    /* Adjust Middle Column */
     .middle-column {
-        /* Remove any fixed height or overflow properties */
-        /* height: 300px; */
-        overflow:hidden;
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
+
     /* Adjust Centered Purple Div for Mobile */
     .centered-purple-div {
         width: 100%; /* Full width */
-        height: 300px; /* Adjusted height */
+        height: 200px; /* Adjusted height */
         font-size: 16px; /* Adjusted font size */
-      
     }
 
     /* Adjust Download Form */
@@ -451,12 +437,10 @@ main {
         width: 100%; /* Wider on mobile */
         margin-top: 20px; /* Top margin */
     }
+
     .card-body {
-    padding-top: 20px; /* Inner padding */
-    padding-left: 5px; /* Inner padding */
-    padding-right: 5px; /* Inner padding */
-    position: relative; /* For paste button positioning */
-}
+        padding: 20px 10px; /* Inner padding */
+    }
 
     .card-body form.d-flex {
         flex-direction: column; /* Stack form elements vertically */
@@ -467,100 +451,37 @@ main {
         margin-bottom: 15px; /* Space below input group */
     }
 
-    .card-body form.d-flex #convertButton {
-       
-    }
-
     /* Floating Footer Adjustments */
     .floating-footer {
-        height: 60px; /* Increased height for mobile */
+        height: 60px; /* Maintained height for consistency */
         font-size: 14px; /* Larger font size */
     }
 }
 
-/* Restore Original Button Styles for Larger Screens */
-@media (min-width: 820px) {
-    .btn-container {
-        position: static; /* Default position */
-        width: auto; /* Auto width */
-        background-color: transparent; /* No background */
-        padding: 0; /* No padding */
-        box-shadow: none; /* No shadow */
-    }
-
-    .btn-container .btn {
-        width: auto; /* Auto width */
-        margin: 0 10px; /* Horizontal margin */
-        font-size: 12px; /* Default font size */
-    }
-    .three-column-layout .row {
-        flex-direction: column; /* Stack columns vertically */
-    }
-
-    /* Centered Purple Div */
-    .centered-purple-div {
-        width: 100%; /* Full width */
-        background-color: purple; /* Purple background */
-        margin: 20px auto; /* Center horizontally with vertical margin */
-        height: 150px; /* Fixed height */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff; /* White text color */
-        font-size: 18px; /* Font size */
-        border-radius: 10px; /* Rounded corners */
-    }
-}
-
-/* Ensure Action Buttons Have Consistent Sizing */
-.action-buttons .btn {
-    min-width: 150px; /* Minimum width */
-}
-
-/* Adjust Margins for Action Buttons */
-.action-buttons .btn-secondary {
-    margin-right: auto; /* Auto right margin */
-}
-
-.action-buttons .btn-primary {
-    margin-left: auto; /* Auto left margin */
-}
 /* Media Query for Medium Screens */
 @media (max-width: 1200px) {
     /* Stack the main container divs on top of each other */
-    .main-container .row {
-        flex-direction: column; /* Stack side-div and card vertically */
-    }
-
-    .side-div {
+    .main-container .side-div,
+    .main-container .emphasized-card {
         width: 100%; /* Full width */
         margin-bottom: 20px; /* Add margin between stacked divs */
     }
 
-    .card.emphasized-card {
-        width: 100%; /* Full width on smaller screens */
-        margin-top: 0; /* Remove margin for better stacking */
-    }
-
-    /* Ensure the columns in the three-column layout stack as well */
-    .three-column-layout .row {
-        flex-direction: column; /* Stack columns vertically */
-    }
-
-    .left-column,
-    .middle-column,
-    .right-column {
+    .three-column-layout .left-column,
+    .three-column-layout .middle-column,
+    .three-column-layout .right-column {
         width: 100%; /* Full width for each column */
         margin-bottom: 20px; /* Add margin between stacked columns */
     }
 }
+
 /* Emphasize the Card */
 .emphasized-card {
     width: 100%; /* Full width */
     max-width: 600px; /* Maximum width */
     margin: 0 auto; /* Center the card */
     padding: 20px; /* Add padding for emphasis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Emphasize Input Fields */
@@ -590,7 +511,7 @@ main {
     padding: 10px; /* Add padding to make it stand out */
 }
 
-/* For very small screens, additional adjustments */
+/* Media Query for Very Small Screens */
 @media (max-width: 768px) {
     .floating-footer {
         font-size: 14px; /* Adjust footer text size */
@@ -599,4 +520,49 @@ main {
     .centered-purple-div {
         font-size: 16px; /* Adjust text size */
     }
+}
+
+/* Restore Original Button Styles for Larger Screens */
+@media (min-width: 820px) {
+    .btn-container {
+        position: static; /* Default position */
+        width: auto; /* Auto width */
+        background-color: transparent; /* No background */
+        padding: 0; /* No padding */
+        box-shadow: none; /* No shadow */
+    }
+
+    .btn-container .btn {
+        width: auto; /* Auto width */
+        margin: 0 10px; /* Horizontal margin */
+        font-size: 12px; /* Default font size */
+    }
+
+    /* Centered Purple Div */
+    .centered-purple-div {
+        width: 100%; /* Full width */
+        background-color: purple; /* Purple background */
+        margin: 20px auto; /* Center horizontally with vertical margin */
+        height: 150px; /* Fixed height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff; /* White text color */
+        font-size: 18px; /* Font size */
+        border-radius: 10px; /* Rounded corners */
+    }
+}
+
+/* Ensure Action Buttons Have Consistent Sizing */
+.action-buttons .btn {
+    min-width: 150px; /* Minimum width */
+}
+
+/* Adjust Margins for Action Buttons */
+.action-buttons .btn-secondary {
+    margin-right: auto; /* Auto right margin */
+}
+
+.action-buttons .btn-primary {
+    margin-left: auto; /* Auto left margin */
 }

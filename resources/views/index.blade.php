@@ -13,56 +13,47 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <!-- Custom CSS -->
-     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-    <!-- Additional Styles -->
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <!-- Primary Meta Tags -->
     <meta name="title" content="Video Vibe - Effortlessly Convert YouTube Playlists & Single Videos to MP3/MP4">
     <meta name="description" content="Video Vibe lets you seamlessly convert and download your favorite YouTube playlists and single videos to MP3 or MP4 formats. Enjoy high-quality audio and video downloads with just a few clicks!">
-    <!--Google Analytics \
-    
-    
-    
-    --->
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PBRTJDPR');</script>
-<!-- End Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[];
+            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PBRTJDPR');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4749076613405516"
      crossorigin="anonymous"></script>
     <!-- Keywords Meta Tag -->
     <meta name="keywords" content="YouTube to MP3, YouTube to MP4, Playlist Converter, Video Downloader, Free YouTube Converter, Download YouTube Videos, Convert YouTube Playlists, Single Video Downloader">
+    <!-- Favicon and Icons -->
     <link rel="icon" href="{{ asset('icons/favicon.ico') }}" type="image/x-icon">
-    
-    <!-- PNG Favicon for Modern Browsers -->
     <link rel="icon" href="{{ asset('icons/favicon-32x32.png') }}" type="image/png" sizes="32x32">
     <link rel="icon" href="{{ asset('icons/favicon-16x16.png') }}" type="image/png" sizes="16x16">
-    
-    <!-- Apple Touch Icon for iOS Devices -->
     <link rel="apple-touch-icon" href="{{ asset('icons/apple-touch-icon.png') }}">
-    
-    <!-- Manifest for Progressive Web Apps (Optional) -->
     <link rel="manifest" href="{{ asset('icons/manifest.json') }}">
-    <link rel="icon" href="{{ asset('favicon.ico') }}">
+    <link rel="canonical" href="https://www.videovibes.cc/" />
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.videovibes.cc/">
     <meta property="og:title" content="Video Vibe - Effortlessly Convert YouTube Playlists & Single Videos to MP3/MP4">
     <meta property="og:description" content="Seamlessly convert and download YouTube playlists and single videos to MP3 or MP4 formats with Video Vibe. Enjoy your favorite content offline anytime, anywhere!">
     <meta property="og:image" content="https://www.videovibes.cc/assets/img/og-image.jpg">
-    
     <!-- Twitter Meta Tags -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.videovibes.cc/">
     <meta property="twitter:title" content="Video Vibe - Effortlessly Convert YouTube Playlists & Single Videos to MP3/MP4">
     <meta property="twitter:description" content="Convert and download your favorite YouTube playlists and single videos to MP3 or MP4 formats easily with Video Vibe. Enjoy offline access to your music and videos with our user-friendly tool.">
     <meta property="twitter:image" content="https://www.videovibes.cc/assets/img/twitter-image.jpg">
-    
-    <!-- Canonical URL to Prevent Duplicate Content Issues -->
-    <link rel="canonical" href="https://www.videovibes.cc/" />
-    
     <!-- Structured Data (JSON-LD) for Enhanced Search Engine Understanding -->
     <script type="application/ld+json">
     {
@@ -78,49 +69,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     }
     </script>
-    
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBRTJDPR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBRTJDPR"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Header Section -->
     <header class="app-header">
-        <div class="container-fluid">
-            <!-- Navigation Links -->
-            <div class="header-links text-center">
-                  <a href="/">Home</a>
-                <a href="/faq">FAQ</a>
-                <a href="/t&c">T&C</a>
-            </div>
-            <!-- Logo and Title -->
-            <div class="logo-title-section text-center mt-4">
-               <a href="/"> <img src="{{ asset('assets/img/icon.png') }}" alt="Logo" class="logo"></a>
-                <h1 class="app-title mt-2">Video Vibes</h1>
-            </div>
+        <!-- Navigation Links -->
+        <nav class="header-links">
+            <a href="/">Home</a>
+            <a href="/faq">FAQ</a>
+            <a href="/t&c">T&C</a>
+        </nav>
+        <!-- Logo and Title -->
+        <div class="logo-title-section">
+            <a href="/">
+                <img src="{{ asset('assets/img/icon.png') }}" alt="Logo" class="logo">
+            </a>
+            <h1 class="app-title">Video Vibes</h1>
         </div>
     </header>
 
     <!-- Main Content Container -->
-    <div class="main-container">
+    <main class="main-container">
         <!-- Orange Div (Left Advertisement) -->
-        <div class="side-div orange-div">
-        <script type="text/javascript">
-	atOptions = {
-		'key' : '75461091d2d1cd590498a9a5a6d359f8',
-		'format' : 'iframe',
-		'height' : 600,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/75461091d2d1cd590498a9a5a6d359f8/invoke.js"></script>
-  
+        <aside class="side-div orange-div">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '75461091d2d1cd590498a9a5a6d359f8',
+                    'format' : 'iframe',
+                    'height' : 600,
+                    'width' : 160,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.topcreativeformat.com/75461091d2d1cd590498a9a5a6d359f8/invoke.js"></script>
+        </aside>
+
         <!-- Card Component -->
-        <div class="card emphasized-card  mx-auto">
+        <div class="card emphasized-card">
             <!-- Card Header -->
-            <div class="card-header text-center">
+            <div class="card-header">
                 <h3>Download Your Favorite Playlist to MP3 or MP4</h3>
             </div>
             <!-- Card Body -->
@@ -144,47 +138,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <button type="submit" class="btn themed-button ml-2" id="convertButton">
                             Convert
                         </button>
-                        <div id="urlError" class="alert alert-danger mt-2" style="display: none;" role="alert">
-        Please enter a valid YouTube URL.
-    </div>
                     </form>
+                    <!-- Error Message -->
+                    <div id="urlError" class="alert alert-danger mt-2" style="display: none;" role="alert">
+                        Please enter a valid YouTube URL.
+                    </div>
                 </div>
                 <!-- Progress Bar (Hidden Initially) -->
-                <div class="progress mt-3" style="display:none; background-color: white;">
+                <div class="progress mt-3" style="display:none;">
                     <div class="progress-bar progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                    <div id="progressText" class="animated-text mt-2"></div>
                 </div>
+                <div id="progressText" class="animated-text mt-2" style="display:none;"></div>
                 <!-- Convert Next Button (Hidden Initially) -->
                 <button id="convertNextButton" class="btn btn-primary btn-block mt-3" style="display:none;">Convert Next</button>
                 <!-- Action Buttons (Hidden Initially) -->
-                <div class="action-buttons mt-3">
-                    <button id="selectAllButton" class="btn btn-primary" style="display:none;">Select All</button>
-                    <button id="downloadSelectedButton" class="btn btn-primary" style="display:none;">Download Selected</button>
+                <div class="action-buttons mt-3" style="display:none;">
+                    <button id="selectAllButton" class="btn btn-primary">Select All</button>
+                    <button id="downloadSelectedButton" class="btn btn-primary">Download Selected</button>
                 </div>
             </div>
             <!-- End of Card Body -->
         </div>
 
         <!-- Brown Div (Right Advertisement) -->
-        <div class="side-div brown-div">
-        <script type="text/javascript">
-	atOptions = {
-		'key' : '75461091d2d1cd590498a9a5a6d359f8',
-		'format' : 'iframe',
-		'height' : 600,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/75461091d2d1cd590498a9a5a6d359f8/invoke.js"></script>
-        </div>
-    </div>
+        <aside class="side-div brown-div">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '75461091d2d1cd590498a9a5a6d359f8',
+                    'format' : 'iframe',
+                    'height' : 600,
+                    'width' : 160,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.topcreativeformat.com/75461091d2d1cd590498a9a5a6d359f8/invoke.js"></script>
+        </aside>
+    </main>
     <!-- End of Main Content Container -->
-
-    <!-- Centered Purple Div -->
-    <!-- <div class="centered-purple-div">
-        <p>Centered Purple Div</p>
-    </div> -->
 
     <!-- Three Column Layout -->
     <div class="three-column-layout">
@@ -209,16 +199,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </thead>
                     <!-- Table Body for Video Items -->
                     <tbody id="video-table-body">
+                        <!-- Dynamic Video Items Will Be Injected Here -->
                     </tbody>
                 </table>
             </div>
             <!-- End of Video List Section -->
+            <!-- Information Sections -->
             <div class="info-section">
                 <h4>About Us</h4>
                 <p>Welcome to our YouTube Playlist to MP3 downloader. Our tool allows you to easily convert and download YouTube playlists to MP3 format. We are dedicated to providing a simple and efficient service to help you enjoy your favorite music offline.</p>
                 <p>If you have any questions or feedback, please feel free to contact us. We are always here to help and improve our service.</p>
             </div>
-            <!-- Information Sections -->
             <div class="info-section">
                 <h4>How to Download</h4>
                 <p>1. Copy the URL of the YouTube playlist you want to download.</p>
@@ -226,7 +217,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>3. Click on the "Convert" button to fetch the video details.</p>
                 <p>4. Select the videos you want to download and click on the "Download Selected" button to start the conversion process.</p>
             </div>
-          
         </div>
         <!-- Right Column -->
         <div class="right-column">
@@ -237,16 +227,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Floating Yellow Footer -->
     <footer class="floating-footer">
-    <script type="text/javascript">
-	atOptions = {
-		'key' : '711606b17b97994069c24795c934118a',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.topcreativeformat.com/711606b17b97994069c24795c934118a/invoke.js"></script>
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '711606b17b97994069c24795c934118a',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.topcreativeformat.com/711606b17b97994069c24795c934118a/invoke.js"></script>
     </footer>
 
     <!-- JavaScript Files -->
