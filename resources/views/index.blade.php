@@ -220,6 +220,7 @@
         </div>
         <!-- Right Column -->
         <div class="right-column">
+        <script src="//servedby.eleavers.com/ads/ads.php?t=MzA5MjU7MjEwMTQ7c3F1YXJlLm1lZGl1bV9yZWN0YW5nbGU=&index=1"></script>
             <!-- Insert your content or advertisements here -->
         </div>
     </div>
