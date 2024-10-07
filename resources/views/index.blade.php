@@ -112,9 +112,10 @@
         </aside>
 
         <!-- Card Component -->
-        <div class="card emphasized-card">
+           <!-- Card Component -->
+           <div class="card emphasized-card  mx-auto">
             <!-- Card Header -->
-            <div class="card-header">
+            <div class="card-header text-center">
                 <h3>Download Your Favorite Playlist to MP3 or MP4</h3>
             </div>
             <!-- Card Body -->
@@ -138,27 +139,27 @@
                         <button type="submit" class="btn themed-button ml-2" id="convertButton">
                             Convert
                         </button>
+                        <div id="urlError" class="alert alert-danger mt-2" style="display: none;" role="alert">
+        Please enter a valid YouTube URL.
+    </div>
                     </form>
-                    <!-- Error Message -->
-                    <div id="urlError" class="alert alert-danger mt-2" style="display: none;" role="alert">
-                        Please enter a valid YouTube URL.
-                    </div>
                 </div>
                 <!-- Progress Bar (Hidden Initially) -->
-                <div class="progress mt-3" style="display:none;">
+                <div class="progress mt-3" style="display:none; background-color: white;">
                     <div class="progress-bar progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div id="progressText" class="animated-text mt-2">: </div>
                 </div>
-                <div id="progressText" class="animated-text mt-2" style="display:none;"></div>
                 <!-- Convert Next Button (Hidden Initially) -->
                 <button id="convertNextButton" class="btn btn-primary btn-block mt-3" style="display:none;">Convert Next</button>
                 <!-- Action Buttons (Hidden Initially) -->
-                <div class="action-buttons mt-3" style="display:none;">
-                    <button id="selectAllButton" class="btn btn-primary">Select All</button>
-                    <button id="downloadSelectedButton" class="btn btn-primary">Download Selected</button>
+                <div class="action-buttons mt-3">
+                    <button id="selectAllButton" class="btn btn-primary" style="display:none;">Select All</button>
+                    <button id="downloadSelectedButton" class="btn btn-primary" style="display:none;">Download Selected</button>
                 </div>
             </div>
             <!-- End of Card Body -->
         </div>
+
 
         <!-- Brown Div (Right Advertisement) -->
         <aside class="side-div brown-div">
