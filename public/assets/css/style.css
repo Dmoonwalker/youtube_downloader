@@ -85,7 +85,7 @@ html {
 /* Side Divs for Advertisements */
 .side-div {
     flex: 1 1 200px; /* Flexible width with minimum */
-    background-color: #FFA500; /* Default to orange, overridden in specific classes */
+    /* background-color: #FFA500; Default to orange, overridden in specific classes */
     min-height: 300px; /* Minimum height to make visible */
     display: flex;
     align-items: center;
@@ -94,11 +94,11 @@ html {
 
 /* Specific Ad Divs */
 .orange-div {
-    background-color: orange; /* Orange background */
+    /* background-color: orange; Orange background */
 }
 
 .brown-div {
-    background-color: brown; /* Brown background */
+    /* background-color: brown; Brown background */
 }
 
 /* Card Styling */
@@ -320,7 +320,7 @@ html {
 }
 
 .left-column {
-    background-color: #FFA500; /* Placeholder color */
+    /* background-color: #FFA500; Placeholder color */
 }
 
 .middle-column {
@@ -328,7 +328,7 @@ html {
 }
 
 .right-column {
-    background-color: #8B4513; /* Brown placeholder color */
+    /* background-color: #8B4513; Brown placeholder color */
 }
 
 /* Centered Purple Div */
