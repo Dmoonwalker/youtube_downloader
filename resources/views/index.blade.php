@@ -91,7 +91,7 @@
     <div class="main-container">
         <!-- Orange Div (Left Advertisement) -->
         <div class="side-div orange-div">
-            
+        <script src="//servedby.eleavers.com/ads/ads.php?t=MzA5MjU7MjEwMTQ7c3F1YXJlLm1lZGl1bV9yZWN0YW5nbGU=&index=1"></script>
             <!-- Insert your advertisement content here -->
             <!-- Example: <img src="path_to_left_ad.jpg" alt="Left Ad" class="img-fluid"> -->
         </div>
