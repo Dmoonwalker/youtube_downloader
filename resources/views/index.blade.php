@@ -91,6 +91,7 @@
     <div class="main-container">
         <!-- Orange Div (Left Advertisement) -->
         <div class="side-div orange-div">
+            
             <!-- Insert your advertisement content here -->
             <!-- Example: <img src="path_to_left_ad.jpg" alt="Left Ad" class="img-fluid"> -->
         </div>
@@ -145,8 +146,16 @@
 
         <!-- Brown Div (Right Advertisement) -->
         <div class="side-div brown-div">
-            <!-- Insert your advertisement content here -->
-            <!-- Example: <img src="path_to_right_ad.jpg" alt="Right Ad" class="img-fluid"> -->
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '75461091d2d1cd590498a9a5a6d359f8',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/75461091d2d1cd590498a9a5a6d359f8/invoke.js"></script>
         </div>
     </div>
     <!-- End of Main Content Container -->
