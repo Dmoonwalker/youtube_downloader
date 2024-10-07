@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-93XKLFVTZ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-93XKLFVTZ1');
+</script>
     <!-- Meta tags for character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,18 +26,7 @@
     <!-- Primary Meta Tags -->
     <meta name="title" content="Video Vibe - Effortlessly Convert YouTube Playlists & Single Videos to MP3/MP4">
     <meta name="description" content="Video Vibe lets you seamlessly convert and download your favorite YouTube playlists and single videos to MP3 or MP4 formats. Enjoy high-quality audio and video downloads with just a few clicks!">
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w,d,s,l,i){
-            w[l]=w[l]||[];
-            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-            var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-            j.async=true;
-            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-            f.parentNode.insertBefore(j,f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PBRTJDPR');
-    </script>
+  
     <!-- End Google Tag Manager -->
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4749076613405516"
