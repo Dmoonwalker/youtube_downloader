@@ -106,9 +106,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="main-container">
         <!-- Orange Div (Left Advertisement) -->
         <div class="side-div orange-div">
-        <script src="//servedby.eleavers.com/ads/ads.php?t=MzA5MjU7MjEwMTQ7c3F1YXJlLm1lZGl1bV9yZWN0YW5nbGU=&index=1"></script>
-        </div>
-
+        <script type="text/javascript">
+	atOptions = {
+		'key' : '75461091d2d1cd590498a9a5a6d359f8',
+		'format' : 'iframe',
+		'height' : 600,
+		'width' : 160,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/75461091d2d1cd590498a9a5a6d359f8/invoke.js"></script>
+  
         <!-- Card Component -->
         <div class="card emphasized-card  mx-auto">
             <!-- Card Header -->
