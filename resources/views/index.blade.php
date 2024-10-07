@@ -18,6 +18,7 @@
     <!-- Primary Meta Tags -->
     <meta name="title" content="Video Vibe - Effortlessly Convert YouTube Playlists & Single Videos to MP3/MP4">
     <meta name="description" content="Video Vibe lets you seamlessly convert and download your favorite YouTube playlists and single videos to MP3 or MP4 formats. Enjoy high-quality audio and video downloads with just a few clicks!">
+    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4749076613405516"
      crossorigin="anonymous"></script>
     <!-- Keywords Meta Tag -->
