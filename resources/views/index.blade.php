@@ -205,12 +205,12 @@
             </div>
             <!-- End of Video List Section -->
             <!-- Information Sections -->
-            <div class="info-section">
+            <div class="info-section" id="about-us">
                 <h4>About Us</h4>
                 <p>Welcome to our YouTube Playlist to MP3 downloader. Our tool allows you to easily convert and download YouTube playlists to MP3 format. We are dedicated to providing a simple and efficient service to help you enjoy your favorite music offline.</p>
                 <p>If you have any questions or feedback, please feel free to contact us. We are always here to help and improve our service.</p>
             </div>
-            <div class="info-section">
+            <div class="info-section" id="about-us">
                 <h4>How to Download</h4>
                 <p>1. Copy the URL of the YouTube playlist you want to download.</p>
                 <p>2. Paste the URL into the input box above.</p>
