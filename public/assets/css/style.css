@@ -1,0 +1,601 @@
+ /* Body Styling */
+ body {
+    background-color: #f8f9fa; /* Light gray background color */
+    font-family: 'Montserrat', sans-serif; /* Montserrat font family */
+    font-size: 14px; /* Base font size */
+    height: 100%; /* Full height */
+    margin: 0; /* Remove default margin */
+    padding-bottom: 60px; /* Space for the footer */
+    box-sizing: border-box; /* Include padding in width */
+
+}
+
+html {
+    height: 100%; /* Full height */
+}
+
+/* Header Styling */
+.app-header {
+    background-color: #264653; /* Dark teal background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 0; /* Vertical padding */
+    height: 220px; /* Fixed header height */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    position: relative;
+    z-index: 1; /* Stack order */
+}
+
+.container-fluid {
+    height: 180px; /* Set container height */
+}
+
+/* Navigation Links */
+.header-links {
+    position: absolute; /* Position over the header */
+    top: 0; /* Align to top */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center; /* Center links */
+    padding-left: -55px; /* Vertical padding */
+    background-color: #264653; /* Match header background */
+    margin: 0; /* Remove default margin */
+}
+
+.header-links a {
+    color: #ffffff; /* White text color */
+    margin: 0 15px; /* Horizontal spacing */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Link font size */
+}
+
+/* Logo and Title Section */
+.logo-title-section {
+    position: relative;
+    z-index: 2;
+    margin-top: 0; /* Remove top margin */
+    text-align: center; /* Center content */
+}
+
+.logo-title-section .logo {
+    width: 60px; /* Logo width */
+    height: 60px; /* Logo height */
+}
+
+.logo-title-section .app-title {
+    font-size: 24px; /* Title font size */
+    color: #ffffff; /* White text color */
+}
+
+/* Main Container Styling */
+.main-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: stretch; /* Stretch items to match height */
+    width: 100%; /* Full width */
+    padding: 20px 0; /* Vertical padding */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Side Divs for Advertisements */
+.side-div {
+    width: 30%; /* 20% width */
+    background-color: #FFA500; /* Default to orange, overridden in specific classes */
+    min-height: 300px; /* Minimum height to make visible */
+}
+
+.orange-div {
+    background-color: orange; /* Orange background */
+    margin-right: 20px; /* Space between orange div and card */
+}
+
+.brown-div {
+    background-color: brown; /* Brown background */
+    margin-left: 20px; /* Space between brown div and card */
+}
+
+/* Card Styling */
+.card.emphasized-card {
+    width: 40%; /* 40% width */
+    max-width: none; /* Remove max-width */
+    /* Top margin */
+    z-index: 100;
+    height: 100%;
+}
+
+.card-header {
+    background-color: #264653; /* Match header color */
+    color: #ffffff; /* White text color */
+}
+
+.card-header h3 {
+    margin: 0; /* Remove default margin */
+}
+
+.card-body {
+   
+    position: relative; /* For paste button positioning */
+}
+
+/* Input Field Styling */
+.rounded-input {
+    border-radius: 30px; /* Rounded corners */
+    padding-right: 80px; /* Space for paste button */
+    border: 1px solid rgba(42, 157, 143, 0.8); /* Border color */
+    height: 50px; /* Input height */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Paste Button Styling */
+.paste-button {
+    position: absolute; /* Position inside input */
+    top: 50%; /* Center vertically */
+    right: 10px; /* Align to right */
+    transform: translateY(-50%); /* Adjust vertical position */
+    padding: 5px 10px; /* Padding */
+    margin: 0; /* No margin */
+    display: flex;
+    align-items: center; /* Center content */
+    border-radius: 15px; /* Rounded corners */
+    background-color: rgba(42, 157, 143, 0.8); /* Teal color */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Paste Button Icon Styling */
+.paste-button .fas {
+    margin-right: 5px; /* Right margin */
+}
+
+/* Paste Button Focus and Active States */
+.paste-button:focus,
+.paste-button:active {
+    outline: none; /* Remove outline */
+    box-shadow: none; /* Remove shadow */
+    background-color: rgba(42, 157, 143, 0.8); /* Teal color */
+    color: #ffffff; /* White text */
+}
+
+/* Convert Button Styling */
+#convertButton {
+    background-color: rgba(42, 157, 143, 0.8); /* Teal color */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 30px; /* Rounded corners */
+    height: 50px; /* Button height */
+    padding: 0 20px; /* Horizontal padding */
+    min-width: 100px; /* Minimum width */
+    font-size: 20px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
+    margin-left: 20px; /* Left margin */
+    white-space: nowrap; /* Prevent text wrap */
+}
+
+/* Themed Button Hover Effect */
+.themed-button:hover {
+    background-color: rgba(38, 70, 83); /* Darker teal on hover */
+}
+
+/* Primary Button Styling */
+.btn-primary {
+    background-color: rgba(42, 157, 143, 0.8); /* Teal color */
+    border-color: rgba(42, 157, 143, 0.8); /* Border color */
+    margin-left: 10px; /* Left margin */
+    font-size: 12px; /* Font size */
+}
+
+/* Primary Button Hover Effect */
+.btn-primary:hover {
+    background-color: rgba(38, 70, 83, 0.8); /* Darker teal on hover */
+    border-color: rgba(38, 70, 83, 0.8); /* Border color */
+}
+
+/* Disabled Button Styling */
+.btn-disabled {
+    background-color: rgba(108, 117, 125, 0.8); /* Gray color */
+    border-color: rgba(108, 117, 125, 0.8); /* Border color */
+    color: #fff; /* White text */
+    cursor: not-allowed; /* Change cursor */
+    font-size: 12px; /* Font size */
+}
+
+/* Progress Bar Styling */
+.progress {
+    height: 50px; /* Height of progress bar */
+    background-color: #ffffff; /* Background color */
+}
+
+.progress-bar {
+    width: 0%; /* Initial width */
+    background-color: rgba(42, 157, 143, 0.8); /* Teal color */
+}
+
+/* Progress Text Styling */
+#progressText {
+    padding-top: 10px;
+    height: 30px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+/* Animated Text Styling */
+.animated-text {
+    color: #e76f51; /* Orange color */
+    font-weight: bold;
+    font-size: 1rem;
+    animation: pulse 1.5s infinite; /* Pulse animation */
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Keyframes for Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Information Section Styling */
+.info-section {
+ 
+}
+
+.info-section h4 {
+    margin-bottom: 15px; /* Bottom margin */
+    color: #264653; /* Dark teal color */
+    text-align: center; /* Center text */
+}
+
+.info-section p {
+    margin-bottom: 10px; /* Bottom margin */
+    color: #264653; /* Dark teal color */
+    text-align: center; /* Center text */
+}
+
+/* Video Item Styling */
+.video-item {
+    padding: 10px; /* Padding */
+    border-bottom: 1px solid #ccc; /* Bottom border */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.video-item img {
+    margin-right: 15px; /* Right margin */
+    width: 100px; /* Thumbnail width */
+    height: 56px; /* Thumbnail height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.video-item h5 {
+    flex-grow: 1; /* Take up remaining space */
+    margin: 0; /* Remove default margin */
+    color: #264653; /* Dark teal color */
+    font-size: 14px; /* Font size */
+}
+
+.video-item .btn {
+    float: right; /* Align to the right */
+    margin-left: 10px; /* Left margin */
+    font-size: 12px; /* Font size */
+}
+
+.video-item input[type="checkbox"] {
+    margin-right: 15px; /* Right margin */
+}
+
+/* Button Container Styling */
+.btn-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+/* Three Column Layout */
+.three-column-layout {
+    display: flex;
+    height: 450px ;/* Adjust height based on header, centered-purple-div, and footer */
+    margin-bottom: 20px; /* Top margin */
+   
+}
+
+.left-column {
+    flex: 3;
+    background-color: red; /* Placeholder color */
+    min-height: 400px; /* Ensure minimum height */
+    margin-right: 20px; /* Space between columns */
+    height: 100%;
+}
+
+.middle-column {
+    flex: 4;
+    min-height: 400px; /* Ensure minimum height */
+}
+
+.right-column {
+    flex: 3;
+    background-color: green; /* Placeholder color */
+    min-height: 400px; /* Ensure minimum height */
+    margin-left: 20px; /* Space between columns */
+}
+
+/* Centered Purple Div */
+.centered-purple-div {
+    width: 100%; /* Full width */
+    background-color: purple; /* Purple background */
+    margin: 20px auto; /* Center horizontally with vertical margin */
+    height: 150px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* White text color */
+    font-size: 18px; /* Font size */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Floating Yellow Footer */
+.floating-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's on top */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    margin-top: 50px;
+}
+main {
+    margin-bottom: 100px;
+}
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 1300px) {
+    /* Adjust Header Links */
+    .header-links {
+        flex-direction: row;
+        font-size: 10px; /* Smaller font size */
+        margin-left: 5px; /* Left margin */
+    }
+    .table{
+        /* Remove any fixed height or overflow properties */
+        /* height: 300px; */
+        overflow:hidden;
+        height: 100%;
+    }
+    .header-links a {
+        margin-left: 5px; /* Left margin */
+        margin-right: 5px; /* Right margin */
+    }
+
+    /* Adjust Logo Title Section */
+    .logo-title-section {
+        margin-top: 20px; /* Top margin */
+    }
+
+    /* Adjust Main Container */
+    .main-container {
+        margin-top: -88px; /* Adjusted for smaller screens */
+        flex-direction: column; /* Stack side divs vertically */
+        align-items: center; /* Center side divs */
+        padding: 10px; /* Add padding */
+    }
+
+    .side-div {
+        width: 80%; /* Adjusted width for smaller screens */
+        height: 80px; /* Fixed height */
+        margin: 10px 0; /* Vertical margin */
+    }
+
+    /* Adjust Three Column Layout */
+    .three-column-layout {
+        flex-direction: column; /* Stack columns vertically */
+        height: auto; /* Adjust height */
+        padding-bottom: 0px;
+    }
+
+    #convertButton {
+        background-color: rgba(42, 157, 143, 0.8); /* Teal color */
+        color: #ffffff; /* White text */
+        border: none; /* No border */
+        border-radius: 30px; /* Rounded corners */
+        height: 50px; /* Button height */
+        padding: 0 20px; /* Horizontal padding */
+        min-width: 100px; /* Minimum width */
+        font-size: 20px; /* Font size */
+        font-weight: bold; /* Bold text */
+        cursor: pointer; /* Pointer cursor */
+        margin-left: 20px; /* Left margin */
+        white-space: nowrap; /* Prevent text wrap */
+    }
+    .left-column,
+    .middle-column,
+    .right-column {
+        width: 100%;
+        min-height: 300px; /* Adjust minimum height */
+        margin: 10px 0; /* Vertical margin */
+    }
+    .left-column,.brown-div{
+        display: none;
+    }
+    .right-column{
+        height: 100%;
+       
+    }
+    .middle-column {
+        /* Remove any fixed height or overflow properties */
+        /* height: 300px; */
+        overflow:hidden;
+        height: 100%;
+    }
+    /* Adjust Centered Purple Div for Mobile */
+    .centered-purple-div {
+        width: 100%; /* Full width */
+        height: 300px; /* Adjusted height */
+        font-size: 16px; /* Adjusted font size */
+      
+    }
+
+    /* Adjust Download Form */
+    .card.emphasized-card {
+        width: 100%; /* Wider on mobile */
+        margin-top: 20px; /* Top margin */
+    }
+    .card-body {
+    padding-top: 20px; /* Inner padding */
+    padding-left: 5px; /* Inner padding */
+    padding-right: 5px; /* Inner padding */
+    position: relative; /* For paste button positioning */
+}
+
+    .card-body form.d-flex {
+        flex-direction: column; /* Stack form elements vertically */
+    }
+
+    .card-body form.d-flex .flex-grow-1 {
+        width: 100%; /* Full width */
+        margin-bottom: 15px; /* Space below input group */
+    }
+
+    .card-body form.d-flex #convertButton {
+       
+    }
+
+    /* Floating Footer Adjustments */
+    .floating-footer {
+        height: 60px; /* Increased height for mobile */
+        font-size: 14px; /* Larger font size */
+    }
+}
+
+/* Restore Original Button Styles for Larger Screens */
+@media (min-width: 820px) {
+    .btn-container {
+        position: static; /* Default position */
+        width: auto; /* Auto width */
+        background-color: transparent; /* No background */
+        padding: 0; /* No padding */
+        box-shadow: none; /* No shadow */
+    }
+
+    .btn-container .btn {
+        width: auto; /* Auto width */
+        margin: 0 10px; /* Horizontal margin */
+        font-size: 12px; /* Default font size */
+    }
+    .three-column-layout .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    /* Centered Purple Div */
+    .centered-purple-div {
+        width: 100%; /* Full width */
+        background-color: purple; /* Purple background */
+        margin: 20px auto; /* Center horizontally with vertical margin */
+        height: 150px; /* Fixed height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff; /* White text color */
+        font-size: 18px; /* Font size */
+        border-radius: 10px; /* Rounded corners */
+    }
+}
+
+/* Ensure Action Buttons Have Consistent Sizing */
+.action-buttons .btn {
+    min-width: 150px; /* Minimum width */
+}
+
+/* Adjust Margins for Action Buttons */
+.action-buttons .btn-secondary {
+    margin-right: auto; /* Auto right margin */
+}
+
+.action-buttons .btn-primary {
+    margin-left: auto; /* Auto left margin */
+}
+/* Media Query for Medium Screens */
+@media (max-width: 1200px) {
+    /* Stack the main container divs on top of each other */
+    .main-container .row {
+        flex-direction: column; /* Stack side-div and card vertically */
+    }
+
+    .side-div {
+        width: 100%; /* Full width */
+        margin-bottom: 20px; /* Add margin between stacked divs */
+    }
+
+    .card.emphasized-card {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 0; /* Remove margin for better stacking */
+    }
+
+    /* Ensure the columns in the three-column layout stack as well */
+    .three-column-layout .row {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .left-column,
+    .middle-column,
+    .right-column {
+        width: 100%; /* Full width for each column */
+        margin-bottom: 20px; /* Add margin between stacked columns */
+    }
+}
+/* Emphasize the Card */
+.emphasized-card {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width */
+    margin: 0 auto; /* Center the card */
+    padding: 20px; /* Add padding for emphasis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Emphasize Input Fields */
+.emphasized-input {
+    font-size: 18px; /* Increase font size */
+    padding: 15px; /* Increase padding */
+    height: auto; /* Adjust height based on padding */
+}
+
+/* Emphasized Buttons */
+.emphasized-button {
+    font-size: 18px; /* Larger font */
+    padding: 15px 25px; /* Increase button padding */
+    border-radius: 30px; /* Consistent button styling */
+    min-width: 150px; /* Minimum width for buttons */
+}
+
+/* Emphasized Icons */
+.emphasized-icon {
+    font-size: 24px; /* Larger icons */
+    margin-right: 10px; /* Add space between icon and text */
+}
+
+/* Emphasize Error Message */
+.emphasized-error {
+    font-size: 16px; /* Increase error message font size */
+    padding: 10px; /* Add padding to make it stand out */
+}
+
+/* For very small screens, additional adjustments */
+@media (max-width: 768px) {
+    .floating-footer {
+        font-size: 14px; /* Adjust footer text size */
+    }
+
+    .centered-purple-div {
+        font-size: 16px; /* Adjust text size */
+    }
+}
