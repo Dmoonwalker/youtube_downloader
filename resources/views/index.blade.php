@@ -18,7 +18,18 @@
     <!-- Primary Meta Tags -->
     <meta name="title" content="Video Vibe - Effortlessly Convert YouTube Playlists & Single Videos to MP3/MP4">
     <meta name="description" content="Video Vibe lets you seamlessly convert and download your favorite YouTube playlists and single videos to MP3 or MP4 formats. Enjoy high-quality audio and video downloads with just a few clicks!">
+    <!--Google Analytics \
     
+    
+    
+    --->
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBRTJDPR');</script>
+<!-- End Google Tag Manager -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4749076613405516"
      crossorigin="anonymous"></script>
     <!-- Keywords Meta Tag -->
@@ -70,6 +81,10 @@
     
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBRTJDPR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <!-- Header Section -->
     <header class="app-header">
         <div class="container-fluid">
@@ -92,8 +107,6 @@
         <!-- Orange Div (Left Advertisement) -->
         <div class="side-div orange-div">
         <script src="//servedby.eleavers.com/ads/ads.php?t=MzA5MjU7MjEwMTQ7c3F1YXJlLm1lZGl1bV9yZWN0YW5nbGU=&index=1"></script>
-            <!-- Insert your advertisement content here -->
-            <!-- Example: <img src="path_to_left_ad.jpg" alt="Left Ad" class="img-fluid"> -->
         </div>
 
         <!-- Card Component -->
