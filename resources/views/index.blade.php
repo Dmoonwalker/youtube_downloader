@@ -216,7 +216,16 @@
 
     <!-- Floating Yellow Footer -->
     <footer class="floating-footer">
-        <p>© 2024 Video Vibe. All rights reserved.</p>
+    <script type="text/javascript">
+	atOptions = {
+		'key' : '711606b17b97994069c24795c934118a',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.topcreativeformat.com/711606b17b97994069c24795c934118a/invoke.js"></script>
     </footer>
 
     <!-- JavaScript Files -->
