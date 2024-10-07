@@ -362,7 +362,7 @@ html {
 
 /* Main Element Margin to Prevent Overlap with Footer */
 main {
-    margin-bottom: 80px; /* Increased to prevent overlap */
+    
 }
 
 /* Responsive Styling for Mobile Devices */
@@ -389,6 +389,7 @@ main {
         flex-direction: column; /* Stack side divs vertically */
         align-items: center; /* Center side divs */
         padding: 10px; /* Add padding */
+        margin-bottom: 0px;
     }
 
     .side-div {
@@ -401,8 +402,7 @@ main {
     .three-column-layout {
         flex-direction: column; /* Stack columns vertically */
         height: auto; /* Adjust height */
-        padding-bottom: 0px;
-        margin-top: 20px;
+        padding: 0px;
     }
 
     .left-column,
