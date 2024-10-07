@@ -401,6 +401,7 @@ main {
         flex-direction: column; /* Stack columns vertically */
         height: auto; /* Adjust height */
         padding-bottom: 0px;
+        margin-top: 600px;
     }
 
     #convertButton {
